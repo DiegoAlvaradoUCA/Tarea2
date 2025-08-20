@@ -1,0 +1,21 @@
+Pasos de la investigación
+1. Identificar sospechosos
+Consulta en Prolog quiénes son las personas en la mansión.
+R// ALICE, ROBERT, CLARA, JAMES --- persona(X).
+2. Analizar motivos
+Crea una regla para identificar quién tiene un motivo para matar.
+R// ALICE, ROBERT, CLARA, JAMES --- tiene_motivo(X).
+3. Verificar oportunidad
+Crea una regla para identificar quién estuvo en la biblioteca (escena del crimen).
+R// CLARA --- estuvo_biblioteca(X).
+4. Cruzar información
+Crea una regla que combine motivo y oportunidad.
+R// CLARA --- oportunidad(X).
+5. Analizar el arma
+El informe forense revela que la víctima fue estrangulada.
+Ajusta tu base de conocimiento para que la única coincidencia sea con el arma correcta (cuerda).
+R// CLARA --- acceso_arma(X).
+6. Descubrir al culpable 
+Finalmente, crea una regla para determinar quién es el asesino culpable y realiza la consulta 
+correspondiente.
+R// CLARA --- culpable(X)
